@@ -1,0 +1,29 @@
+def cups_to_grams(cups,ingredient) :
+    conversion_rates = {
+        "flour":120,
+        "sugar":200,
+        "butter":230
+    }
+    if ingredient in conversion_rates:
+        grams = cups*conversion_rates[ingredient]
+        return grams
+    else:
+        return "conversion rate for this ingredient is not available."
+
+#Writing tablespoon to tea sproom
+def tablespoons_to_teaspoons(tablespoons):
+    return tablespoons*2
+
+def grams_to_cups(grams,ingredient):
+    conversion_rates = {
+        'flour': 120,
+        'sugar': 200,
+        'butter' : 230,
+    }
+    if ingredient in conversion_rates:
+        cups = grams/conversion_rates[ingredient]
+        return cups  
+    else: 
+        return "Conversion rate for this ingredient is not available." 
+         
+
